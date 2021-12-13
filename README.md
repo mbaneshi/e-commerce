@@ -1,5 +1,5 @@
 # e-commerce
-fullstack e-commerce monorepo
+#fullstack e-commerce monorepo
 
 -backend django
 
