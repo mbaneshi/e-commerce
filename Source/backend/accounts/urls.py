@@ -1,8 +1,22 @@
-from django.urls import path
-
+from django.urls import path,include
 from .views import SignUpView
+#-------
+from rest_framework import routers
+from  . import views
 
 
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
 urlpatterns = [
     path('signup/', SignUpView.as_view(), name='signup'),
+     path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
+
+
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
