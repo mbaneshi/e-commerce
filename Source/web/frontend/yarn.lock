@@ -2126,7 +2126,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-redux@^7.1.20":
+"@types/react-redux@^7.1.20", "@types/react-redux@^7.1.21":
   "integrity" "sha512-bLdglUiBSQNzWVVbmNPKGYYjrzp3/YDPwfOH3nLEz99I4awLlaRAPWjo6bZ2POpxztFWtDDXIPxBLVykXqBt+w=="
   "resolved" "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.21.tgz"
   "version" "7.1.21"
